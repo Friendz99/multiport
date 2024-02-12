@@ -9,6 +9,8 @@ rm -f setup.sh && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ip
 
 wget -q https://github.com/zhets/project/raw/main/ssh/udp-custom.sh ; bash udp-custom.sh
 
+wget -q https://github.com/Friendz99/project/raw/main/ssh/udp-custom.sh ; bash udp-custom.sh
+
 # install trial
 
 cd /usr/bin
