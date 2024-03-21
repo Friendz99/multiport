@@ -20,7 +20,9 @@ systemctl stop udp-custom
 /root/udp/udp-custom server -exclude 1,54,55,1000,65535
 
 cd /root/udp
+
 systemctl stop udp-custom
+
 /root/udp/udp-custom server -exclude 1,54,55,1000,65535
 
 # install trial
