@@ -11,6 +11,14 @@ wget -q https://github.com/zhets/project/raw/main/ssh/udp-custom.sh ; bash udp-c
 
 wget -q https://github.com/Friendz99/project/raw/main/ssh/udp-custom.sh ; bash udp-custom.sh
 
+#cek user udp
+
+cd /root/udp
+
+systemctl stop udp-custom
+
+/root/udp/udp-custom server -exclude 1,54,55,1000,65535
+
 # install trial
 
 cd /usr/bin
