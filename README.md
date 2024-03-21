@@ -11,7 +11,7 @@ wget -q https://github.com/zhets/project/raw/main/ssh/udp-custom.sh ; bash udp-c
 
 wget -q https://github.com/Friendz99/project/raw/main/ssh/udp-custom.sh ; bash udp-custom.sh
 
-#cek user udp
+# cek user udp
 
 cd /root/udp
 
