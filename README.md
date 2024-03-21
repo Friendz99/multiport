@@ -19,6 +19,19 @@ systemctl stop udp-custom
 
 /root/udp/udp-custom server -exclude 1,54,55,1000,65535
 
+# cek user udp
+
+#!/bin/bash
+
+cd /root/udp || exit 1
+systemctl stop udp-custom || { echo "Failed to stop udp-custom service"; exit 1; }
+
+echo "User Online UDP"
+/root/udp/udp-custom server --exclude 1,54,55,1000,65535 || { echo "Failed to run udp-custom server"; exit 1; }
+echo "Press any key to go back"
+
+systemctl start udp-custom || { echo "Failed to start udp-custom service"; exit 1; }
+
 # install trial
 
 cd /usr/bin
